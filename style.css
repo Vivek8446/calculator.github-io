@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+body {
+    background-color: rgb(117, 117, 234);
+    animation: back 10s infinite;
+}
+
+.con {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 35px 35px 35px 35px;
+    grid-row-gap: 5px;
+    grid-column-gap: 13px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+h1 {
+    text-align: center;
+    /* margin-left: 3px; */
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    /* margin-top: 20px; */
+    padding: 20px 10px;
+    width: 100%;
+    /* letter-spacing: 1px  ; */
+
+}
+
+.btn {
+    background-color: aquamarine;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 1px 4px;
+    display: flex;
+    border: 2px solid rgb(57, 57, 57);
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    /* font-size: larger; */
+    font-weight: bold;
+    animation: back 10s infinite;
+    /* animation-direction: reverse; */
+    /* box-shadow: 2px 3px 5px #2a8bcc; */
+    box-shadow: 2px 3px ;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+#result {
+    display: grid;
+    grid-column: 1 / span 4;
+    margin-left: 16px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#equal {
+    grid-row: 4 / span 4;
+    grid-column: 4 / span 1;
+    border-radius: 25px;
+    height: 136px;
+    width: 35px;
+    margin-left: 9px;
+}
+
+#result {
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center;
+    width: 170px;
+    border: 1px solid rgb(58, 58, 58);
+}
+#result[type=text]{
+    font-weight: bolder;
+    font-size:medium;
+}
+
+#bk {
+    font-size: larger;
+}
+
+#plus {
+
+    grid-column: 4/ span 1;
+    grid-row: 3 / span 1;
+}
+
+.container {
+    /* margin: 100px; */
+    margin: 20vh 15vh;
+    
+    
+    /* justify-content: center;
+align-items: center; */
+}
+@keyframes back {
+    0%{
+        background: rgb(254, 111, 111);
+    }
+    20%{
+        background: rgb(87, 255, 154);
+    }
+    40%{
+        background: rgb(100, 154, 255);
+    }
+    60%{
+        background: rgb(151, 77, 255);
+    }
+    80%{
+        background: rgb(255, 57, 169);
+    }
+    100%{
+        background: rgb(254, 111, 111);
+    }
+    
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

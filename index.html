@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to calculator</h1>
+
+        <div class="con">
+            <input  type="text" id="result" onclick="dis('')">
+
+            <div class="btn" onclick="clr()">C</div>
+
+            <div  class="btn" id="bk" onclick='back()'
+                onkeydown="myFunction(event)" value="&#8730;">&#8592;</div>
+
+            <div class="btn" onclick="dis('*')" onkeydown="myFunction(event)">*</div>
+
+            <div class="btn" onclick="dis('/')" onkeydown="myFunction(event)">/</div>
+            <div class="btn" onclick="dis('7')" onkeydown="myFunction(event)">7</div>
+
+
+
+            <div class="btn" onclick="dis('8')" onkeydown="myFunction(event)">8</div>
+
+            <div class="btn" onclick="dis('9')" onkeydown="myFunction(event)">9</div>
+            <div class="btn" onclick="dis('+')" onkeydown="myFunction(event)" id="plus">+</div>
+            <div class="btn" onclick="dis('4')" onkeydown="myFunction(event)">4</div>
+            <div class="btn" onclick="dis('5')" onkeydown="myFunction(event)">5</div>
+            <div class="btn" onclick="dis('6')" onkeydown="myFunction(event)">6</div>
+
+            <div class="btn" onclick="calculate()" onkeydown="myFunction(event)" id="equal">=
+            </div>
+            <div class="btn" onclick="dis('1')" onkeydown="myFunction(event)">1</div>
+
+            <div class="btn" onclick="dis('2')" onkeydown="myFunction(event)">2</div>
+            <div class="btn" onclick="dis('3')" onkeydown="myFunction(event)">3</div>
+            <div class="btn" onclick="dis('-')" onkeydown="myFunction(event)">-</div>
+            <div class="btn" onclick="dis('0')" onkeydown="myFunction(event)">0</div>
+            <div class="btn" onclick="dis('.')" onkeydown="myFunction(event)">.</div>
+        </div>
+        <audio id="audioMusic">
+            <source src="s3.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+    <footer style="text-align: center;"> &#169 2022 Copyright : Vivek Kalpavruksha </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
